@@ -1,0 +1,89 @@
+eddy@localhost ~]$ crxy=www.crxy.cn
+[eddy@localhost ~]$ echo ${crxy}
+www.crxy.cn
+[eddy@localhost ~]$ echo ${#crxy}
+11
+[eddy@localhost ~]$ echo ${crxy:1:1}
+w
+[eddy@localhost ~]$ echo ${crxy:1:2}
+ww
+[eddy@localhost ~]$ echo ${crxy:1:3}
+ww.
+[eddy@localhost ~]$ echo ${crxy:1}
+ww.crxy.cn
+[eddy@localhost ~]$ echo ${crxy#*c}
+rxy.cn
+[eddy@localhost ~]$ echo ${crxy##*c}
+n
+[eddy@localhost ~]$ echo ${crxy%c*}
+www.crxy.
+[eddy@localhost ~]$ echo ${crxy%%c*}
+www.
+[eddy@localhost ~]$ echo ${crxy/c/d}
+www.drxy.cn
+[eddy@localhost ~]$ echo ${crxy//c/d}
+www.drxy.dn
+[eddy@localhost ~]$ echo ${crxy/c}
+www.rxy.cn
+[eddy@localhost ~]$ echo ${crxy/#c}
+www.crxy.cn
+[eddy@localhost ~]$ echo ${crxy/#w}
+ww.crxy.cn
+[eddy@localhost ~]$ echo ${crxy/%w}
+www.crxy.cn
+[eddy@localhost ~]$ echo ${crxy/%cn}
+www.crxy.
+[eddy@localhost ~]$ echo ${crxy^^}
+WWW.CRXY.CN
+[eddy@localhost ~]$ echo ${crxy^^,,}
+www.crxy.cn
+[eddy@localhost ~]$ echo ${crxy1}
+
+[eddy@localhost ~]$ echo ${crxy1:-aaa}
+aaa
+[eddy@localhost ~]$ echo ${crxy1:?aaaad}
+-bash: crxy1: aaaad
+[eddy@localhost ~]$ echo ${crxy1:+sdf}
+
+[eddy@localhost ~]$ echo ${crxy:+sdf}
+sdf
+[eddy@localhost ~]$ echo ${crxy1:=sdf}
+sdf
+[eddy@localhost ~]$ echo ${crxy1}
+sdf
+[eddy@localhost ~]$ a[0]=a0
+[eddy@localhost ~]$ echo ${a[0]}
+a0
+[eddy@localhost ~]$ a[2]=a2
+[eddy@localhost ~]$ echo ${a[2]}
+a2
+[eddy@localhost ~]$ a=(a b c d)
+[eddy@localhost ~]$ echo a
+a
+[eddy@localhost ~]$ echo ${a}
+a
+[eddy@localhost ~]$ echo ${a[0]}
+a
+[eddy@localhost ~]$ echo ${a[1]}
+b
+[eddy@localhost ~]$ echo ${a[2]}
+c
+[eddy@localhost ~]$ echo ${a[3]}
+d
+[eddy@localhost ~]$ ls /var/lib/*.log
+ls: 无法访问/var/lib/*.log: 没有那个文件或目录
+[eddy@localhost ~]$ sudo ls /var/lib/*.log
+[sudo] password for eddy: 
+ls: 无法访问/var/lib/*.log: 没有那个文件或目录
+[eddy@localhost ~]$ sudo ls /var/lib/*.log
+ls: 无法访问/var/lib/*.log: 没有那个文件或目录
+[eddy@localhost ~]$ echo ${a[*]}
+a b c d
+[eddy@localhost ~]$ echo ${a[]}
+-bash: ${a[]}: 坏的替换
+[eddy@localhost ~]$ echo ${#a[]}
+-bash: ${#a[]}: 坏的替换
+[eddy@localhost ~]$ echo ${#a}
+1
+[eddy@localhost ~]$ echo ${#a[*]}
+4
