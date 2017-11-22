@@ -1,0 +1,22 @@
+This article will help you access/log in to the user interface or the settings page of your NETGEAR router.
+
+If you are unable to log into your router:
+Connect a computer and a router directly with an Ethernet cable, putting an end in one of the router LAN ports. Check that both ends are secure.
+Check the Internet LED is lit. If it is not, troubleshoot the light status, as explained in the manual.
+Check that the LEDs for the ports with cables are lit. If they are not, try moving the cable to a different port. If there are still no lights, then troubleshoot the light status, as explained in the manual.
+Check that the LED on the Ethernet adapter is lit. If it is not, then troubleshoot the adapter (do not continue with the following steps).
+If the Ethernet adapter was not made by NETGEAR, contact the adapter's manufacturer.
+Select Start > Run. Type cmd. Type ping 192.168.1.1.
+If message "Request timed out," displays, type ping 192.168.0.1.
+If the message persists, your computer is not making a connection to the router.
+Otherwise, your computer is connected to the router:
+Ensure proxies are not enabled. If using Internet Explorer, select Tools > Internet Options > Connections > LAN Settings. Uncheck "Use a proxy server for your LAN....".
+Delete offline content. Select Tools > Internet Options > Delete Files.
+Select Delete all offline content, and click OK. (This is to clear any possible previous router log on page.)
+Try accessing with a different computer or with a different browser.
+Delete cookies.
+WARNING: Do not do this if the websites you visit need cookie information such as your logins and passwords.
+Power off the router, and power it back on again.
+If you still cannot log on to the router, visit How do I login to my NETGEAR home router?
+Check the computer's IP address and DHCP. The IP should be in the 192.168.0.x range, and DHCP should be enabled. Visit What is the IP address of my NETGEAR router?
+If you still cannot log on, visit Restoring a NETGEAR home router to the factory default settings
