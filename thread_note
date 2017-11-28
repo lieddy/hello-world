@@ -1,0 +1,4 @@
+测试其它进程的线程是否存活
+1. 获取线程id  pit_t pID = syscall(SYS_gettid);
+2. 另一个进程中测试  int iRet = kill(_pID,0);
+3. iRet == ESRCH 线程没有存活
