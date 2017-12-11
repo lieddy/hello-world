@@ -70,13 +70,6 @@ b
 c
 [eddy@localhost ~]$ echo ${a[3]}
 d
-[eddy@localhost ~]$ ls /var/lib/*.log
-ls: 无法访问/var/lib/*.log: 没有那个文件或目录
-[eddy@localhost ~]$ sudo ls /var/lib/*.log
-[sudo] password for eddy: 
-ls: 无法访问/var/lib/*.log: 没有那个文件或目录
-[eddy@localhost ~]$ sudo ls /var/lib/*.log
-ls: 无法访问/var/lib/*.log: 没有那个文件或目录
 [eddy@localhost ~]$ echo ${a[*]}
 a b c d
 [eddy@localhost ~]$ echo ${a[]}
